@@ -1,0 +1,30 @@
+>>> Starting ablation for layer 16
+CHECKPOINT: 
+GPUS: 1
+[test] total_params: 14.607260128B
+[ZeroAblation] Zeroed attention + MLP weights for layer 16
+=========== Perception ===========
+total score: 1665.9717887154864 
+
+	 existence  score: 195.0
+	 count  score: 175.0
+	 position  score: 176.66666666666669
+	 color  score: 200.0
+	 posters  score: 159.8639455782313
+	 celebrity  score: 122.94117647058823
+	 scene  score: 150.75
+	 landmark  score: 174.0
+	 artwork  score: 141.75
+	 OCR  score: 170.0
+
+
+=========== Cognition ===========
+total score: 630.7142857142858 
+
+	 commonsense_reasoning  score: 140.71428571428572
+	 numerical_calculation  score: 145.0
+	 text_translation  score: 177.5
+	 code_reasoning  score: 167.5
+
+
+write results to file /lustre06/project/6067888/thwang4/bagel/BAGEL/zero_ablation_16/mme/results.txt

@@ -1,0 +1,30 @@
+>>> Starting ablation for layer 22
+CHECKPOINT: 
+GPUS: 1
+[test] total_params: 14.607260128B
+[ZeroAblation] Zeroed attention + MLP weights for layer 22
+=========== Perception ===========
+total score: 1690.1976790716285 
+
+	 existence  score: 195.0
+	 count  score: 178.33333333333331
+	 position  score: 178.33333333333331
+	 color  score: 200.0
+	 posters  score: 168.7074829931973
+	 celebrity  score: 123.8235294117647
+	 scene  score: 150.75
+	 landmark  score: 176.5
+	 artwork  score: 141.25
+	 OCR  score: 177.5
+
+
+=========== Cognition ===========
+total score: 698.2142857142858 
+
+	 commonsense_reasoning  score: 160.71428571428572
+	 numerical_calculation  score: 170.0
+	 text_translation  score: 185.0
+	 code_reasoning  score: 182.5
+
+
+write results to file /lustre06/project/6067888/thwang4/bagel/BAGEL/zero_ablation_22/mme/results.txt

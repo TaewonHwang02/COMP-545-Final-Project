@@ -1,0 +1,14 @@
+wandb
+__pycache__
+.vscode
+notebooks
+results
+*.ipynb_checkpoints
+eval_results
+tests
+.DS_Store
+gradio.sh
+*.err
+models/
+slurm_var.sh
+data/mme/

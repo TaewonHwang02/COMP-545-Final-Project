@@ -1,0 +1,24 @@
+decord==0.6.0
+einops==0.8.1
+huggingface_hub==0.35.3 
+matplotlib==3.8.4             
+numpy==1.24.4
+PyYAML==6.0.2
+requests==2.32.3              
+safetensors==0.4.5             
+scipy==1.10.1
+sentencepiece==0.1.99
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.49.0
+accelerate==1.10.1            
+wandb==0.21.2                 
+gradio==5.49.1
+gradio-client==1.13.3
+pydantic==2.10.4
+wheel==0.45.1                  
+ninja==1.11.1
+bitsandbytes==0.48.1
+xlsxwriter==3.2.9
+triton ; sys_platform != 'win32'
+triton-windows ; sys_platform == 'win32'

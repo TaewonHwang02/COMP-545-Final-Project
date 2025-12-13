@@ -1,0 +1,62 @@
+>>> Starting MMLU ablation for layer 8
+>>> Model:        /lustre06/project/6067888/thwang4/bagel/BAGEL/models/BAGEL-7B-MoT
+>>> Output dir:   /lustre06/project/6067888/thwang4/bagel/BAGEL/results_mmlu
+>>> Subjects:     high_school_mathematics,high_school_physics,college_mathematics,abstract_algebra,computer_security,formal_logic
+>>> Max Q / subj: 100
+>>> HF_CACHE_DIR: /lustre06/project/6067888/thwang4/bagel/hf_mmlu
+>>> ABLATE_LAYER = 8
+>>> MODEL_PATH   = /lustre06/project/6067888/thwang4/bagel/BAGEL/models/BAGEL-7B-MoT
+>>> Loading BAGEL model with eval.vlm.utils.load_model_and_tokenizer...
+
+=== Evaluating subject: high_school_mathematics ===
+[ZeroAblation] Zeroed attention + MLP weights for layer 8
+[high_school_mathematics] 20/100 — acc = 0.350
+[high_school_mathematics] 40/100 — acc = 0.425
+[high_school_mathematics] 60/100 — acc = 0.433
+[high_school_mathematics] 80/100 — acc = 0.425
+[high_school_mathematics] 100/100 — acc = 0.440
+Subject high_school_mathematics: 44.00% (44/100)
+
+=== Evaluating subject: high_school_physics ===
+[high_school_physics] 20/100 — acc = 0.100
+[high_school_physics] 40/100 — acc = 0.150
+[high_school_physics] 60/100 — acc = 0.133
+[high_school_physics] 80/100 — acc = 0.125
+[high_school_physics] 100/100 — acc = 0.120
+Subject high_school_physics: 12.00% (12/100)
+
+=== Evaluating subject: college_mathematics ===
+[college_mathematics] 20/100 — acc = 0.250
+[college_mathematics] 40/100 — acc = 0.275
+[college_mathematics] 60/100 — acc = 0.300
+[college_mathematics] 80/100 — acc = 0.275
+[college_mathematics] 100/100 — acc = 0.240
+Subject college_mathematics: 24.00% (24/100)
+
+=== Evaluating subject: abstract_algebra ===
+[abstract_algebra] 20/100 — acc = 0.250
+[abstract_algebra] 40/100 — acc = 0.250
+[abstract_algebra] 60/100 — acc = 0.283
+[abstract_algebra] 80/100 — acc = 0.250
+[abstract_algebra] 100/100 — acc = 0.250
+Subject abstract_algebra: 25.00% (25/100)
+
+=== Evaluating subject: computer_security ===
+[computer_security] 20/100 — acc = 0.200
+[computer_security] 40/100 — acc = 0.125
+[computer_security] 60/100 — acc = 0.117
+[computer_security] 80/100 — acc = 0.113
+[computer_security] 100/100 — acc = 0.100
+Subject computer_security: 10.00% (10/100)
+
+=== Evaluating subject: formal_logic ===
+[formal_logic] 20/100 — acc = 0.350
+[formal_logic] 40/100 — acc = 0.425
+[formal_logic] 60/100 — acc = 0.450
+[formal_logic] 80/100 — acc = 0.450
+[formal_logic] 100/100 — acc = 0.450
+Subject formal_logic: 45.00% (45/100)
+
+=== DONE ===
+Overall accuracy: 26.67% (160/600)
+Saved results to: /lustre06/project/6067888/thwang4/bagel/BAGEL/results_mmlu/mmlu_layer_8.json

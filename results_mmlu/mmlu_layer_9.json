@@ -1,0 +1,46 @@
+{
+  "ablate_layer": 9,
+  "subjects": [
+    "high_school_mathematics",
+    "high_school_physics",
+    "college_mathematics",
+    "abstract_algebra",
+    "computer_security",
+    "formal_logic"
+  ],
+  "per_subject": {
+    "high_school_mathematics": {
+      "accuracy": 0.48,
+      "correct": 48,
+      "total": 100
+    },
+    "high_school_physics": {
+      "accuracy": 0.4,
+      "correct": 40,
+      "total": 100
+    },
+    "college_mathematics": {
+      "accuracy": 0.38,
+      "correct": 38,
+      "total": 100
+    },
+    "abstract_algebra": {
+      "accuracy": 0.3,
+      "correct": 30,
+      "total": 100
+    },
+    "computer_security": {
+      "accuracy": 0.71,
+      "correct": 71,
+      "total": 100
+    },
+    "formal_logic": {
+      "accuracy": 0.52,
+      "correct": 52,
+      "total": 100
+    }
+  },
+  "overall_accuracy": 0.465,
+  "total_correct": 279,
+  "total_questions": 600
+}

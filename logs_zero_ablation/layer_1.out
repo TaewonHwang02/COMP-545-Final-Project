@@ -1,0 +1,30 @@
+>>> Starting ablation for layer 1
+CHECKPOINT: 
+GPUS: 1
+[test] total_params: 14.607260128B
+=========== Perception ===========
+total score: 0.0 
+
+	 existence  score: 0.0
+	 count  score: 0.0
+	 position  score: 0.0
+	 color  score: 0.0
+	 posters  score: 0.0
+	 celebrity  score: 0.0
+	 scene  score: 0.0
+	 landmark  score: 0.0
+	 artwork  score: 0.0
+	 OCR  score: 0.0
+
+
+=========== Cognition ===========
+total score: 0.0 
+
+	 commonsense_reasoning  score: 0.0
+	 numerical_calculation  score: 0.0
+	 text_translation  score: 0.0
+	 code_reasoning  score: 0.0
+
+
+
+write results to file /lustre06/project/6067888/thwang4/bagel/BAGEL/zero_ablation_1/mme/results.txt
