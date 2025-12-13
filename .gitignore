@@ -12,3 +12,4 @@ gradio.sh
 models/
 slurm_var.sh
 data/mme/
+*.md
