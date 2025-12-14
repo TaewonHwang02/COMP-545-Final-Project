@@ -11,4 +11,4 @@
                
 source venv/bin/activate
 
-python mmlu_bagel.py 2>&1 | tee mmlu_bagel_logs_server.txt
+python bagel_reasoning_mmlu.py 2>&1 | tee mmlu_bagel_logs_server.txt
