@@ -9,26 +9,17 @@ from datasets import load_dataset
 # Bagel-specific loader
 from eval.vlm.utils import load_model_and_tokenizer
 
-# ------------- DEFAULT SUBJECTS -------------
+
 DEFAULT_SUBJECTS = [
     "abstract_algebra",
     "high_school_mathematics",
     "high_school_physics",
     "college_mathematics",
-    "machine_learning",
     "computer_security",
-    "econometrics",
     "formal_logic",
 ]
 
-
-# --------- Build MMLU prompt (5-shot) ---------
 def build_prompt(dev_set, q):
-    """
-    Build a standard 5-shot MMLU prompt:
-    - use all examples in dev_set (usually 5)
-    - answers provided as letters A/B/C/D
-    """
     shots = ""
     for ex in dev_set:
         choices = "\n".join(
@@ -46,36 +37,25 @@ def build_prompt(dev_set, q):
     return prompt
 
 
-# --------- Run Bagel, extract A/B/C/D ----------
-def predict_letter(model, tokenizer, new_token_ids, prompt):
-    """
-    Run the *Bagel* model on the prompt and extract the first A/B/C/D it generates.
 
-    Uses Bagel.chat(), which internally:
-      - builds KV cache
-      - calls generate_text()
-      - returns decoded string
-    """
-    # text-only: no images, so image_transform is unused
+def predict_letter(model, tokenizer, new_token_ids, prompt):
+   
     text = model.chat(
         tokenizer=tokenizer,
         new_token_ids=new_token_ids,
         image_transform=None,
         images=[],
         prompt=prompt,
-        max_length=16,          # a few tokens after "Answer: "
+        max_length=16,         
         do_sample=False,
         temperature=0.0,
     )
 
-    # Grab the first A/B/C/D that appears
     for ch in text:
         if ch in "ABCD":
             return ch
     return None
 
-
-# --------- Evaluate a single subject ----------
 def evaluate_subject(model, tokenizer, new_token_ids, subject, max_questions=None):
     """
     Evaluate one subject of MMLU (cais/mmlu).

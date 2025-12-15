@@ -39,6 +39,9 @@ snapshot_download(cache_dir=cache_dir,
 - Weight modification analysis is performed using `weight_modification_experiment.ipynb` file.
 - Language reasoning capability comparison between BAGEL model and Qwen2.5 model is done using `qwen_reasoning_mmlu.py` & `bagel_reasoning_mmlu.py`
 - `benchmark.sh` file is used to utilize slurm on Compute Canada server to run experiments.
+- Ablation results available on `logs_mmlu/` and `logs_zero_ablation`
+- Ablation for MMLU performed using `mmlu_ablation.py` and MME done using existing script from bagel. 
+- Ablation logic modified `modeling/bagel/qwen2_navit.py`
 
 ## 📜 License
 
