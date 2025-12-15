@@ -42,6 +42,7 @@ snapshot_download(cache_dir=cache_dir,
 - Ablation results available on `logs_mmlu/` and `logs_zero_ablation`
 - Ablation for MMLU performed using `mmlu_ablation.py` and MME done using existing script from bagel. 
 - Ablation logic modified `modeling/bagel/qwen2_navit.py`
+- ViT token ablation experiment: `ablation_no_vit.py` (single sample), `run_rise_ablation_eval.py` (batch evaluation on RISE dataset), `submit_rise_ablation_slurm.sh` (Slurm submission script)
 
 ## 📜 License
 
