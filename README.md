@@ -1,8 +1,11 @@
 # COMP 545 Final Project
 
+This repository is cloned from the [BAGEL](https://github.com/bytedance-seed/BAGEL) repository. We analyze the interal architecture and mechanism of the `BAGEL` model by performing various ablation studies.
+
 ## 🔥 Quick Start
 
-1️⃣  Set up environment
+1️⃣ Set up environment
+
 ```bash
 git clone https://github.com/bytedance-seed/BAGEL.git
 cd BAGEL
@@ -12,7 +15,8 @@ pip install -r requirements.txt
 pip install flash_attn==2.5.8 --no-build-isolation
 ```
 
-2️⃣  Download pretrained checkpoint
+2️⃣ Download pretrained checkpoint
+
 ```python
 from huggingface_hub import snapshot_download
 
@@ -37,4 +41,5 @@ snapshot_download(cache_dir=cache_dir,
 - `benchmark.sh` file is used to utilize slurm on Compute Canada server to run experiments.
 
 ## 📜 License
+
 BAGEL is licensed under the Apache 2.0.
